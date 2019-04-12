@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Tre_i_rad
+{
+    public partial class Form1 : Form
+    {
+        bool turn = true; //true = X tur, false = O tur
+        int turn_count = 0;
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void OmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Välj en ruta och klicka på den för att markera ditt X eller O. Den första som får tre i rad vinner.");
+        } // Visar spelreglerna
+
+        private void StängToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        } // Stänger spelet
+
+        private void button_click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
